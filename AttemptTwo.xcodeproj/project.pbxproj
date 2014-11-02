@@ -18,6 +18,10 @@
 		B8423F9D1A05C47A00B57331 /* NymiUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8423F9C1A05C47A00B57331 /* NymiUser.m */; };
 		B8423FA21A05C79000B57331 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8423FA11A05C79000B57331 /* SwipeViewController.m */; };
 		B8423FA51A05C7FC00B57331 /* ReturningUserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8423FA41A05C7FC00B57331 /* ReturningUserDetailViewController.m */; };
+		B89047411A05D57300352EE5 /* IDTECH_UniMag.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B89047401A05D57300352EE5 /* IDTECH_UniMag.a */; };
+		B89047441A05D74A00352EE5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89047431A05D74A00352EE5 /* AudioToolbox.framework */; };
+		B89047461A05D75F00352EE5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89047451A05D75F00352EE5 /* AVFoundation.framework */; };
+		B8FE0EAB1A05D77900CF38DF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FE0EAA1A05D77900CF38DF /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,11 @@
 		B8423FA11A05C79000B57331 /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
 		B8423FA31A05C7FC00B57331 /* ReturningUserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturningUserDetailViewController.h; sourceTree = "<group>"; };
 		B8423FA41A05C7FC00B57331 /* ReturningUserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturningUserDetailViewController.m; sourceTree = "<group>"; };
+		B89047401A05D57300352EE5 /* IDTECH_UniMag.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = IDTECH_UniMag.a; sourceTree = "<group>"; };
+		B89047421A05D60100352EE5 /* uniMag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uniMag.h; sourceTree = "<group>"; };
+		B89047431A05D74A00352EE5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B89047451A05D75F00352EE5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B8FE0EAA1A05D77900CF38DF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8FE0EAB1A05D77900CF38DF /* MediaPlayer.framework in Frameworks */,
+				B89047461A05D75F00352EE5 /* AVFoundation.framework in Frameworks */,
+				B89047441A05D74A00352EE5 /* AudioToolbox.framework in Frameworks */,
+				B89047411A05D57300352EE5 /* IDTECH_UniMag.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,9 @@
 		B8423F661A05BFE400B57331 = {
 			isa = PBXGroup;
 			children = (
+				B8FE0EAA1A05D77900CF38DF /* MediaPlayer.framework */,
+				B89047451A05D75F00352EE5 /* AVFoundation.framework */,
+				B89047431A05D74A00352EE5 /* AudioToolbox.framework */,
 				B8423F711A05BFE400B57331 /* AttemptTwo */,
 				B8423F8E1A05BFE400B57331 /* AttemptTwoTests */,
 				B8423F701A05BFE400B57331 /* Products */,
@@ -93,6 +109,8 @@
 		B8423F711A05BFE400B57331 /* AttemptTwo */ = {
 			isa = PBXGroup;
 			children = (
+				B89047421A05D60100352EE5 /* uniMag.h */,
+				B89047401A05D57300352EE5 /* IDTECH_UniMag.a */,
 				B8423F9F1A05C67400B57331 /* controllers */,
 				B8423F9E1A05C52E00B57331 /* models */,
 				B8423F761A05BFE400B57331 /* AppDelegate.h */,
@@ -387,6 +405,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AttemptTwo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AttemptTwo",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -397,6 +419,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AttemptTwo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AttemptTwo",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -454,6 +480,7 @@
 				B8423F971A05BFE400B57331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8423F981A05BFE400B57331 /* Build configuration list for PBXNativeTarget "AttemptTwoTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +489,7 @@
 				B8423F9A1A05BFE400B57331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

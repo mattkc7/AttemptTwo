@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "uniMag.h"
 
 @interface SwipeViewController : UIViewController
 
+@property (strong, nonatomic) uniMag *uniMag;
 @end
